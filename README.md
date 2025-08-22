@@ -1,21 +1,15 @@
 # Calculadora-anagrama
-using System;
-using System.Linq;
+# Calculadora de Anagramas em C#
 
-class Program
-{
-    static void Main()
-    {
-        string p1 = "roma";
-        string p2 = "amor";
+🔤 Projeto simples em C# para verificar se duas palavras são **anagramas**.
 
-        bool saoAnagramas = p1.ToLower().Replace(" ", "")
-                              .OrderBy(c => c)
-                              .SequenceEqual(p2.ToLower().Replace(" ", "").OrderBy(c => c));
+## Descrição
 
-        if (saoAnagramas)
-            Console.WriteLine("As palavras são anagramas!");
-        else
-            Console.WriteLine("As palavras não são anagramas!");
-    }
-}
+O programa lê duas palavras digitadas pelo usuário e verifica se elas possuem os mesmos caracteres, independentemente da ordem.
+
+- Usa **arrays de caracteres**.
+- Ordena os caracteres com `Array.Sort`.
+- Compara posição por posição.
+- Exibe se são ou não anagramas.
+
+
